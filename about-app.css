@@ -1,0 +1,184 @@
+.context-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url("img/about-app-background.jpg") no-repeat center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+/**/
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 3% 5%;
+}
+
+.container h1{
+    color: #FFFFFF;
+    margin: 0 0 35px 0;
+}
+
+.target-segment-description h2{
+    color: #ffffff;
+    margin: 0 0 20px 0;
+}
+
+.breeder-advisor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.card-title img{
+    width: 40px;
+}
+
+.breeder h1{
+    color: #DC763C;
+    font-weight: bold;
+}
+
+.about-description{
+    padding: 10px 0;
+}
+
+.card {
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+}
+
+.container h1{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 1rem;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(150, 150, 150, 0.1);
+    font-weight: bold;
+}
+
+.card p{
+    color: black;
+    width: 75%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.breeder{
+    border-radius: 10px 0 0 10px;
+    background-color: #ffffff;
+}
+
+.breeder h1{
+    color: #DC763C;
+}
+
+.advisor p{
+    color: #FFFFFF;
+}
+
+.advisor{
+    border-radius: 0 10px 10px 0;
+    background-color: #DC763C;
+}
+
+/*----------Flip Cards--------------------*/
+.cards-grid {
+    display: flex;
+    grid-gap: 80px;
+    padding-bottom: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* FLIP CARD */
+.flip-card {
+    width: 340px;
+    height: 504px;
+    perspective: 2000px;
+}
+
+.flip-card h3{
+    color: #000000;
+    font-weight: bold;
+}
+
+.flip-card p{
+    margin: 50px 0 ;
+    padding: 0;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 28px;
+    transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
+    transform-style: preserve-3d;
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flip-card-back {
+    font-size: 1.25rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    padding: 32px;
+    background-color: #FFFFFF;
+    transform: rotateY(180deg);
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+}
+
+@media (max-width: 1630px) {
+    .breeder-advisor{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        margin: 0;
+        height: 100%;
+    }
+    .breeder{
+        border-radius: 10px 10px 0 0;
+    }
+    .advisor{
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media (max-width: 745px){
+    .container{
+        margin-top: 15%;
+    }
+}

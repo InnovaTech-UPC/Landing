@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AgroTech ofrece soluciones tecnológicas innovadoras para mejorar la gestión de granjas. Nuestra misión es empoderar a los granjeros con herramientas inteligentes y eficientes.">
+    <meta name="author" content="AgroTech">
+    <meta name="robots" content="index, follow">
+    <title>AgroTech</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <!-- Icon -->
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!--Recursos de boxicons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="img/logo-circular.jpg" alt="icon-AgroTech">
+            <span>AgroTech</span>
+        </a>
+
+        <ul class="navbar">
+            <li><a href="index.html" class="btn-nav">Inicio</a></li>
+            <li><a href="about-app.html" class="btn-nav">Problemática</a></li>
+            <li><a href="features.html" class="btn-nav">Características</a></li>
+            <li><a href="about-us.html" class="btn-nav">Sobre Nosotros</a></li>
+            <li><a href="contact.html" class="btn-nav">Contacto</a></li>
+        </ul>
+
+        <div class="menu">
+            <a href="#" class="usser">Descargar</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <main>
+        <div id="formulario">   
+            <form>
+                <h1> ¿Tienes alguna duda? ¡Escríbenos! </h1>
+                <div id="nombre-completo">
+                    <div class="nombre">
+                        <label for="formNombre">Nombre(s): </label><br>
+                        <input type="text" id="formNombre" placeholder="Ingresa tu nombre"><br>
+                    </div>
+                   <div class="apellidos">
+                        <label for="formApellidos">Apellidos: </label><br>
+                        <input type="text" id="formNombre" placeholder="Ingresa tus apellidos"><br>
+                   </div>
+                </div>
+                <label for="formCorreo">Correo electrónico: </label><br>
+                <input type="text" id="formCorreo" placeholder="Ingresa tu correo" required><br>
+                <label for="formMensaje">Mensaje: </label><br>
+                <textarea id="formMensaje" cols="55" rows="10" placeholder="Introduce tu mensaje" required></textarea>
+                <div id="botonForm">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </main>
+        
+    <footer>
+        <h4 class="footer-text">InnovaTech - soluciones eficientes</h4> 
+        <ul class="social-icons">
+            <li> <a href="#" class="fb"><img src="img/facebook.png" alt="fb"></a></li>
+            <li> <a href="#" class="ins"><img src="img/instagram.png" alt="ins"></a></li>
+            <li> <a href="#" class="tw"><img src="img/x.png" alt="tw"></a></li>
+            <li> <a href="#" class="tw"><img src="img/tiktok.png" alt="tw"></a></li>
+        </ul> 
+        <h4 class="footer-credits">© InnovaTech 2025</h4> 
+    </footer>
+    <!--Script-->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
