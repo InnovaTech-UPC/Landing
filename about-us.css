@@ -57,7 +57,7 @@ p{
 }
 
 .mission-vision h1{
-  color: #F84343;
+  color: var(--primary-color);
   font-weight: bold;
 }
 
@@ -90,7 +90,7 @@ p{
 
 .mission{
   border-radius: 10px 0 0 10px;
-  background-color: #F84343;
+  background-color: var(--success-color);
 }
 
 .mission h1{

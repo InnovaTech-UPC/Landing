@@ -144,7 +144,7 @@ iframe {
 .card:hover .intro {
     height: 160px;
     bottom: 0px;
-    background: #092C4C;
+    background: var(--primary-color);;
     transition: 0.5s;
 }
 
