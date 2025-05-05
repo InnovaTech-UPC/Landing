@@ -200,9 +200,13 @@ footer {
     padding: 5%;
 }
 
-.footer-text{
+.footer-text a{
     color: var(--text-primary-color);
-    font-style: italic;
+    font-style: bold;
+}
+
+.footer-text a:hover{
+    color: var(--text-secundary-color);
 }
 
 .footer-credits{
