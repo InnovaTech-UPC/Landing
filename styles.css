@@ -191,13 +191,23 @@ footer {
     transition: all 0.5s ease;
 }
 
-.social-icons{
-    display:flex;
+.social-icons {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0;
 }
 
-.social-icons li{
-    list-style: none;
-    padding: 5%;
+.social-icons li a i {
+    font-size: 24px;
+    color: var(--text-primary-color);
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons li a:hover i {
+    color: var(--secondary-color-second);
+    transform: scale(1.2);
 }
 
 .footer-text a{
@@ -224,7 +234,7 @@ footer {
     }
 }
 
-@media (max-width: 1482px){
+@media (max-width: 900px){
     #menu-icon{
         display: block;
     }

@@ -182,3 +182,30 @@
         margin-top: 15%;
     }
 }
+
+@media (max-width: 450px) {
+    
+    .flip-card {
+        width: 90%;
+    }
+
+    .flip-card-back {
+        font-size: 1.1rem;
+    }
+
+    .breeder-advisor .card-title h1{
+        font-size: 2rem;
+    }
+
+    .breeder-advisor h3 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .breeder-advisor p {
+        font-size: 1rem;
+    }
+}
