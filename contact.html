@@ -45,18 +45,19 @@
         <div id="formulario">   
             <form>
                 <h1> ¿Tienes alguna duda? ¡Escríbenos! </h1>
+                <div id="mensaje-exito" style="display:none;"></div>
                 <div id="nombre-completo">
                     <div class="nombre">
                         <label for="formNombre">Nombre(s): </label><br>
-                        <input type="text" id="formNombre" placeholder="Ingresa tu nombre"><br>
+                        <input type="text" id="formNombre" placeholder="Ingresa tu nombre" required><br>
                     </div>
                    <div class="apellidos">
                         <label for="formApellidos">Apellidos: </label><br>
-                        <input type="text" id="formNombre" placeholder="Ingresa tus apellidos"><br>
+                        <input type="text" id="formApellidos" placeholder="Ingresa tus apellidos" required><br>
                    </div>
                 </div>
                 <label for="formCorreo">Correo electrónico: </label><br>
-                <input type="text" id="formCorreo" placeholder="Ingresa tu correo" required><br>
+                <input type="email" id="formCorreo" placeholder="Ingresa tu correo" required><br>
                 <label for="formMensaje">Mensaje: </label><br>
                 <textarea id="formMensaje" cols="55" rows="10" placeholder="Introduce tu mensaje" required></textarea>
                 <div id="botonForm">
@@ -78,5 +79,6 @@
     </footer>
     <!--Script-->
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="contact.js"></script>
 </body>
 </html>
