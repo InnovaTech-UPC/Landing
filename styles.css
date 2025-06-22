@@ -86,7 +86,7 @@ header{
 }
 
 .navbar a:hover{
-    color: var(--text-secundary-color);
+    color: var(--text-color);
 }
 
 .navbar .nav-active{
@@ -117,6 +117,10 @@ header{
 
 .user{
     background: var(--primary-color);
+}
+
+.new-user{
+    background: var(--text-color);
 }
 
 .menu a:hover{
@@ -216,7 +220,7 @@ footer {
 }
 
 .footer-text a:hover{
-    color: var(--text-secundary-color);
+    color: var(--text-color);
 }
 
 .footer-credits{
@@ -234,7 +238,7 @@ footer {
     }
 }
 
-@media (max-width: 900px){
+@media (max-width: 1120px){
     #menu-icon{
         display: block;
     }
