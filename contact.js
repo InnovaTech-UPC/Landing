@@ -5,13 +5,12 @@ document.querySelector('#formulario form').addEventListener('submit', async func
 
     const data = new URLSearchParams({
         nombre: document.getElementById('formNombre').value,
-        apellidos: document.getElementById('formApellidos').value,
         correo: document.getElementById('formCorreo').value,
         mensaje: document.getElementById('formMensaje').value
     });
 
     try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbzECCKvN227rzKeSTU9S_7LfIlvfzQpkSMQtuC5rvqTs4KlWl2d_2uPs6ixv-Q5cC-0/exec', {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbzs128kuf6t6B1Hfqu-RspvgVPu0VrMGnEPfyyznaWU6dTcDkqjXOO7cYv1NkibXXkFDw/exec', {
             method: 'POST',
             body: data,
             headers: {
