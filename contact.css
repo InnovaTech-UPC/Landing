@@ -92,6 +92,10 @@ input[type="submit"]:hover {
 
 @media only screen and (max-width: 850px) {
 
+    main {
+        margin-top: 100px;
+    }
+
     h1 {
         font-size: 30px;
         padding-bottom: 0.5rem;
